@@ -4,11 +4,11 @@ import (
 	"flag"
 	"fmt"
 
-	"go-zero-test/video/api/rpc/internal/config"
-	useractionServer "go-zero-test/video/api/rpc/internal/server/useraction"
-	userinfoServer "go-zero-test/video/api/rpc/internal/server/userinfo"
-	"go-zero-test/video/api/rpc/internal/svc"
-	"go-zero-test/video/api/rpc/types/user"
+	"github.com/987700984/gotest/video/api/rpc/internal/config"
+	useractionServer "github.com/987700984/gotest/video/api/rpc/internal/server/useraction"
+	userinfoServer "github.com/987700984/gotest/video/api/rpc/internal/server/userinfo"
+	"github.com/987700984/gotest/video/api/rpc/internal/svc"
+	"github.com/987700984/gotest/video/api/rpc/types/user"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/core/service"

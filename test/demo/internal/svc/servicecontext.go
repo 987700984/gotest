@@ -1,7 +1,7 @@
 package svc
 
 import (
-	"go-zero-test/test/demo/internal/config"
+	"github.com/987700984/gotest/test/demo/internal/config"
 )
 
 type ServiceContext struct {

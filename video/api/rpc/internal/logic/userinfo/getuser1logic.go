@@ -3,8 +3,8 @@ package userinfologic
 import (
 	"context"
 
-	"go-zero-test/video/api/rpc/internal/svc"
-	"go-zero-test/video/api/rpc/types/user"
+	"github.com/987700984/gotest/video/api/rpc/internal/svc"
+	"github.com/987700984/gotest/video/api/rpc/types/user"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

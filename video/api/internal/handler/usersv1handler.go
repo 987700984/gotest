@@ -3,9 +3,9 @@ package handler
 import (
 	"net/http"
 
+	"github.com/987700984/gotest/video/api/internal/logic"
+	"github.com/987700984/gotest/video/api/internal/svc"
 	"github.com/zeromicro/go-zero/rest/httpx"
-	"go-zero-test/video/api/internal/logic"
-	"go-zero-test/video/api/internal/svc"
 )
 
 func usersv1Handler(svcCtx *svc.ServiceContext) http.HandlerFunc {

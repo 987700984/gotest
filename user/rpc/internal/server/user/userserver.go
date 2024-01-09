@@ -6,9 +6,9 @@ package server
 import (
 	"context"
 
-	"go-zero-test/user/rpc/internal/logic/user"
-	"go-zero-test/user/rpc/internal/svc"
-	"go-zero-test/user/rpc/types/user"
+	"github.com/987700984/gotest/user/rpc/internal/logic/user"
+	"github.com/987700984/gotest/user/rpc/internal/svc"
+	"github.com/987700984/gotest/user/rpc/types/user"
 )
 
 type UserServer struct {

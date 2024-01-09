@@ -6,9 +6,9 @@ package server
 import (
 	"context"
 
-	"go-zero-test/video/api/rpc/internal/logic/userinfo"
-	"go-zero-test/video/api/rpc/internal/svc"
-	"go-zero-test/video/api/rpc/types/user"
+	"github.com/987700984/gotest/video/api/rpc/internal/logic/userinfo"
+	"github.com/987700984/gotest/video/api/rpc/internal/svc"
+	"github.com/987700984/gotest/video/api/rpc/types/user"
 )
 
 type UserInfoServer struct {

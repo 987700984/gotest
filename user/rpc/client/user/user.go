@@ -6,7 +6,7 @@ package user
 import (
 	"context"
 
-	"go-zero-test/user/rpc/types/user"
+	"github.com/987700984/gotest/user/rpc/types/user"
 
 	"github.com/zeromicro/go-zero/zrpc"
 	"google.golang.org/grpc"

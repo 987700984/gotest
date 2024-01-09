@@ -3,8 +3,8 @@ package logic
 import (
 	"context"
 
-	"go-zero-test/test/demo/internal/svc"
-	"go-zero-test/test/demo/internal/types"
+	"github.com/987700984/gotest/test/demo/internal/svc"
+	"github.com/987700984/gotest/test/demo/internal/types"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

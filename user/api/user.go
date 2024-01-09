@@ -4,9 +4,9 @@ import (
 	"flag"
 	"fmt"
 
-	"go-zero-test/user/api/internal/config"
-	"go-zero-test/user/api/internal/handler"
-	"go-zero-test/user/api/internal/svc"
+	"github.com/987700984/gotest/user/api/internal/config"
+	"github.com/987700984/gotest/user/api/internal/handler"
+	"github.com/987700984/gotest/user/api/internal/svc"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/rest"

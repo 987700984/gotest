@@ -4,9 +4,9 @@ import (
 	"flag"
 	"fmt"
 
-	"go-zero-test/video/api/internal/config"
-	"go-zero-test/video/api/internal/handler"
-	"go-zero-test/video/api/internal/svc"
+	"github.com/987700984/gotest/video/api/internal/config"
+	"github.com/987700984/gotest/video/api/internal/handler"
+	"github.com/987700984/gotest/video/api/internal/svc"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/rest"

@@ -6,7 +6,7 @@ package userinfo
 import (
 	"context"
 
-	"go-zero-test/video/api/rpc/types/user"
+	"github.com/987700984/gotest/video/api/rpc/types/user"
 
 	"github.com/zeromicro/go-zero/zrpc"
 	"google.golang.org/grpc"

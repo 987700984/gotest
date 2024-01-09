@@ -1,6 +1,6 @@
 package svc
 
-import "go-zero-test/video/api/rpc/internal/config"
+import "github.com/987700984/gotest/video/api/rpc/internal/config"
 
 type ServiceContext struct {
 	Config config.Config

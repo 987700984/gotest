@@ -4,10 +4,10 @@ import (
 	"flag"
 	"fmt"
 
-	"go-zero-test/user/rpc/internal/config"
-	userServer "go-zero-test/user/rpc/internal/server/user"
-	"go-zero-test/user/rpc/internal/svc"
-	"go-zero-test/user/rpc/types/user"
+	"github.com/987700984/gotest/user/rpc/internal/config"
+	userServer "github.com/987700984/gotest/user/rpc/internal/server/user"
+	"github.com/987700984/gotest/user/rpc/internal/svc"
+	"github.com/987700984/gotest/user/rpc/types/user"
 
 	"github.com/zeromicro/go-zero/core/conf"
 	"github.com/zeromicro/go-zero/core/service"
