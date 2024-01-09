@@ -1,0 +1,27 @@
+syntax = "v1"
+
+type UserV1 {
+	Name string `json:"name"`
+}
+
+type UserV2 {
+	Name string `json:"name"`
+}
+
+@server (
+	prefix: /v1
+)
+service demo-api {
+	@handler usersv1
+	get /v1/users returns ([]UserV1)
+}
+
+@server (
+	prefix: /v2
+)
+service demo-api {
+	@handler usersv2
+	get /v2/users returns ([]UserV2)
+}
+
+//goctl  api go -api  video/api/user.api   -dir video/api

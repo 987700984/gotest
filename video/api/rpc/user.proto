@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package user;
+
+option go_package = "./user";
+
+message IdRequest{
+  string id = 1;
+}
+
+message UserInfoReponse{
+  //用户id
+  int32  id = 1;
+  string email = 2;
+  string username = 3;
+  string nickname=4;
+}
+
+service UserInfo{
+  rpc getUser(IdRequest) returns(UserInfoReponse);
+  rpc getUser1(IdRequest) returns(UserInfoReponse);
+}
+service UserAction{
+  rpc getUser(IdRequest) returns(UserInfoReponse);
+  rpc getAAF(IdRequest) returns(UserInfoReponse);
+  rpc getUser1(IdRequest) returns(UserInfoReponse);
+}
+//goctl rpc protoc user/rpc/user.proto --go_out=user/rpc/types --go-grpc_out=user/rpc/types --zrpc_out=user/rpc/
+
+//goctl rpc protoc user.proto --go_out=types --go-grpc_out=types --zrpc_out=.
+
+//goctl rpc protoc user.proto --go_out=types --go-grpc_out=types --zrpc_out=. -m
