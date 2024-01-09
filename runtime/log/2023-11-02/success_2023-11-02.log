@@ -1,0 +1,62 @@
+2023-11-02 14:46:4647 - 127.0.0.1 " POST /co/test HTTP/1.1 200 11.6225ms "  PostmanRuntime-ApipostRuntime/1.1.0  
+2023-11-02 15:19:1932 - 127.0.0.1 " POST /co/test HTTP/1.1 200 331.8µs "  PostmanRuntime-ApipostRuntime/1.1.0  Error #01: json: unsupported type: func(*http.Request) string
+
+2023-11-02 15:20:2042 - 127.0.0.1 " POST /co/test HTTP/1.1 200 497.1µs "  PostmanRuntime-ApipostRuntime/1.1.0  Error #01: json: unsupported type: func(*http.Request) string
+
+2023-11-02 15:21:2122 - 127.0.0.1 " POST /co/test HTTP/1.1 200 508.3µs "  PostmanRuntime-ApipostRuntime/1.1.0  Error #01: json: unsupported type: func(*http.Request) string
+
+2023-11-02 15:24:2435 - 127.0.0.1 " POST /co/test HTTP/1.1 200 274.5µs "  PostmanRuntime-ApipostRuntime/1.1.0  
+panic error time panic:2023-11-02 17:555:5527
+redis: nil
+stackrace from panic:goroutine 26 [running]:
+runtime/debug.Stack()
+	D:/go/src/runtime/debug/stack.go:24 +0x65
+example.com/v2/pkg/logger.Recover.func1()
+	D:/go/project/gotest/pkg/logger/logger.go:136 +0x28b
+panic({0x15e09a0, 0x17a1ec0})
+	D:/go/src/runtime/panic.go:884 +0x213
+example.com/v2/controller.AdminController.Login({}, 0x2?)
+	D:/go/project/gotest/controller/admin.go:60 +0x445
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/go/project/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+example.com/v2/middleware.AuthHandler.func1(0xc00060e200)
+	D:/go/project/gotest/middleware/auth.go:20 +0x8b
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/go/project/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+example.com/v2/middleware.AuthHandler.func1(0xc00060e200)
+	D:/go/project/gotest/middleware/auth.go:20 +0x8b
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/go/project/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-contrib/sessions.Sessions.func1(0xc00060e200)
+	D:/go/project/pkg/mod/github.com/gin-contrib/sessions@v0.0.5/sessions.go:54 +0x19a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/go/project/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+example.com/v2/pkg/logger.Recover(0xc00060e200)
+	D:/go/project/gotest/pkg/logger/logger.go:146 +0xba
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/go/project/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00060e200)
+	D:/go/project/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/go/project/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc00060e200)
+	D:/go/project/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x82
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/go/project/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00060e200)
+	D:/go/project/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/go/project/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000422820, 0xc00060e200)
+	D:/go/project/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x66b
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000422820, {0x17a7f40?, 0xc000622000}, 0xc00060e100)
+	D:/go/project/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1dd
+net/http.serverHandler.ServeHTTP({0x17a6758?}, {0x17a7f40, 0xc000622000}, 0xc00060e100)
+	D:/go/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc000172360, {0x17a87f8, 0xc00045d560})
+	D:/go/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	D:/go/src/net/http/server.go:3089 +0x5ed
+
+2023-11-02 17:55:5527 - 127.0.0.1 " POST /admin/login HTTP/1.1 200 313.583ms "  PostmanRuntime-ApipostRuntime/1.1.0  
+2023-11-02 17:55:5558 - 127.0.0.1 " POST /admin/login HTTP/1.1 200 307.4956ms "  PostmanRuntime-ApipostRuntime/1.1.0  
